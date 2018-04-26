@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objects</title>
+</head>
+<body>
+	<script>
+		const person = { name : 'irsad', age:1989, address:{city:'pune', state:'karnatka'},birthYear: function () { 
+			return 2018 - this.age;
+		 }
+
+		,hobby:['music','play','search' ]
+	}
+	let answer;
+	answer = person;
+	answer = person.name;
+	answer = person.address.state;
+	answer =person.hobby;
+	answer = person.birthYear();
+	console.log(answer);
+	// var person1 = prompt("Please enter your age", " 45");
+	// document.getElementById(' ').innerHTML = person1;
+	const arr = [
+	{name :'wahid',age :30},
+	{name :'sahid',age :31},
+	{name :'zahid',age :32},
+	{ name :'sajid',age:44}
+	];
+	for ( let i = 0 ; i < arr.length; i++) {
+		console.log(arr[i].name);
+		console.log(arr[i].age);
+	}
+	</script>
+</body>
+</html>

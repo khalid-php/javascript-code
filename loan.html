@@ -1,0 +1,68 @@
+</!DOCTYPE html>
+<html>
+
+<head>
+    <title>loan</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle2.css">
+</head>
+
+<body>
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-body">
+                        <h1 class="headind display"> Loan Calculator </h1>
+                        <form id="loan-form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                    <input type="text" class="form-control" id="amount" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">%</div>
+                                    <input type="text" class="form-control" id="interest" placeholder="interest">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">@</div>
+                                    <input type="text" class="form-control" id="years" placeholder="year">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary"> calculat loan</button>
+                        </form>
+                        <!--loader here -->
+                        <!-- <img src="css/loading.gif" alt="icon"> -->
+                        <!--result here-->
+                        <h5 class="lead">Result</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">monthly amount</div>
+                                <input type="text" class="form-control" id="monthlypay">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Intreste</div>
+                                <input type="text" class="form-control" id="intrestpay">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">Total Amt</div>
+                                <input type="text" class="form-control" id="totalpay">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/loan.js"></script>
+</body>
+
+</html>

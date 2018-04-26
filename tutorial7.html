@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string method</title>
+</head>
+<body>
+	<script>
+		//concanet 
+		const firstName = 'irshad';
+		const secondName = 'the cow is pet aminal';
+		const age = 45;
+		//appending
+		let val;
+		val = firstName + secondName;
+		console.log(val);
+		val = firstName + ' ' + secondName;
+		console.log(val); 
+		val = 'mohan ';
+		val += 'singh';
+		console.log(val);
+		val = ' hello ,my name is'+firstName +'and second name is'+ secondName +' ' + 'my age is' + age;
+		console.log(val);
+		//escaping 
+		val = "that's the name and i can't awesomw";
+		console.log(val);
+		val = firstName.length;
+		console.log(val);
+		val = firstName.concat(' ',secondName);
+		console.log(val);
+		//change the case
+		val =firstName.toUpperCase();
+		val = secondName.toLowerCase();
+		console.log(val);
+		val= firstName.indexOf('a');
+		console.log(val);
+		val = secondName.lastIndexOf('p');
+		console.log(val);
+
+		//charAt 
+		val = secondName.charAt(5);
+		console.log(val);
+		const geet = 'the holy book of my';
+		let ans;
+		ans= geet.charAt(6);
+		console.log(ans);
+		ans = geet.charAt(geet.length - 1);
+		console.log(ans);
+
+		ans = geet.substring(4,8);
+		console.log(ans);
+		ans = geet.slice(1,6);
+		console.log(ans);
+		ans = geet.slice(-3);
+		console.log(ans);
+		ans = geet.split('',1);
+		console.log(ans);
+		ans = geet.replace('the','that');
+		console.log(ans);
+		ans = geet.includes("religions",4);
+		console.log(ans);
+	</script>
+</body>
+</html>

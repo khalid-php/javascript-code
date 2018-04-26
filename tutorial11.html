@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>date object</title>
+</head>
+<body>
+	<script>
+		const bird = new Date();
+		console.log(bird);
+		let nowdate;
+		nowdate = Date();
+		console.log(nowdate);
+		nowdate = new Date('10-10-2014');
+		nowdate = Date('march/10/ 2001');
+		console.log(nowdate);
+		nowdate = bird.getMonth();
+		nowdate = bird.getYear();
+		nowdate = bird.getFullYear();
+		nowdate = bird.getDay();
+		nowdate = bird.getHours();
+		nowdate = bird.getMinutes();
+		nowdate = bird.getSeconds();
+		nowdate = bird.getMilliseconds();
+		nowdate = bird.getTime();
+		//set date 
+		nowdate = bird.setMonth('4');
+		nowdate = bird.setDate('2019');
+		nowdate = bird.setFullYear('2018');
+		nowdate = bird.setHours(3);
+		nowdate =bird.setMinutes(23);
+		console.log(nowdate);
+	</script>
+</body>
+</html>

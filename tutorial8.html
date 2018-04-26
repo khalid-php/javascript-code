@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string & templete</title>
+</head>
+<body>
+<script>
+	const name = 'sadab hussain';
+	const age = 10;
+	const post = 'student 2 std';
+	const city = 'utter pradesh';
+	let html;
+	//without templete string (res5)
+	html = '<ul> <li> name: '+ name +'</li>' +
+				'<li> age: ' + age +'</li>' +
+				'<li> post :' + post + '</li>' +
+				'<li> city :' + city + '</li>'
+				'</ul>'
+	document.body.innerHTML = html;
+
+	// use of function 
+	function  hello() {
+		return 'hello';
+	}
+	 //with templete string to 
+	const car = ['hundai','suzuke','mrf'];
+	html = ` <ul>
+		<li> name : ${name} </li>
+		<li> age : ${age} </li>
+		<li> post : ${post} </li>
+		<li> city : ${city} </li>
+		<li> ${2 + 2}  </li>
+		<li> ${hello()} </li>
+		<li>${car}</li>
+		<li> ${ age < 14 ?' eligible is admision':'not eligible for admision' }
+		</ul>
+		`
+		document.body.innerHTML = html;
+	</script>
+</body>
+</html>

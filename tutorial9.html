@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array & method</title>
+</head>
+<body>
+	<script> 
+		let ans,val;
+		const number = [12,45,34,13, 56,78,99,105]
+		const strg = ['red','white','blue','grey'];
+		const mixed =[12,45,33,'rahim','ram',new Date(),{a:'whater',b:34,c:'riya'},true];
+		console.log(number);
+		console.log(strg);
+		console.log(mixed);
+		console.log(number.length);
+		ans= number.push(45);
+		console.log(ans);
+		ans = Array.isArray(number);
+		console.log(ans);
+		ans =Array.isArray(strg);
+		console.log(ans);
+		ans = number[0];
+		ans = strg[3];
+		console.log(ans);
+		ans =strg.indexOf('red');
+		console.log(ans);
+		ans = mixed.push(259);
+		console.log(ans);
+		strg.unshift(234);
+		ans =strg.shift(234);
+		// ans = strg.pop();
+		console.log(ans);
+		ans = number.splice(0,4);
+		console.log(ans);
+		ans = strg.reverse();
+		console.log(ans);
+		ans = strg.sort();
+		console.log(ans);
+		ans = number.concat(strg);
+		ans = ans.sort();
+		val = number.sort()
+		console.log(ans);
+		console.log(val);
+		//sorting the compare the number;
+		val = number.sort(function (x,y) {
+			return x - y;
+		});
+		console.log(val);
+		// sorting the number
+		val = number.sort(function (x,y) {
+			return y-x;
+		});
+		function  over50(num) {
+			return  num > 50 ;
+		}
+		val = number.find(over50);
+
+		console.log(val);
+	</script>
+</body>
+</html>

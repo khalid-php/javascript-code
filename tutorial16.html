@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scope</title>
+</head>
+<body>
+	<script>
+		var a = 1;
+		let b = 2;
+		const c = 3; 
+		function abc() {
+			var a = 5;
+			let b = 6;
+			const c = 12;
+		console.log("the scope of ",a ,b,c);
+	}
+	abc();
+	if (true) {
+		var a = 11;
+		let b = 22;
+		const c =93; 
+		console.log('scope of if',a,b,c);
+	}
+
+	for (let a = 1; a < 10; a++) {
+		console.log(`the loop of ${a}`);
+	}
+	
+	console.log("scope of globle ",a,b,c);
+	</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>general loop</title>
+</head>
+<body>
+	<p class="demo">Hello</p>
+	<script>
+		const arrOne = [
+			{id: '1', name: 'one'},
+			{id: '2', name: 'two'},
+			{id: '3', name: 'three'},
+			{id: '4', name: 'four'},
+			{id: '5', name: 'five'},
+		];
+
+		console.log(document.querySelector('.demo').innerHTML);
+		// console.log(arrOne);
+		// For Each Array
+		// arrOne.forEach((element, index) => {
+		// 	console.log(element);
+		// });
+
+
+		// for (let i = 0 ; i < arrOne.length; i++) {
+		// 	console.log(arrOne[i]);
+		// }
+
+		const arr = arrOne.map(x => {
+			const rObj = {};
+			rObj[x.id] = x.name
+			console.log(rObj);
+
+		});
+
+
+
+		// //for loop
+		// // for ( let i = 0 ; i < 10 ; i++ ) {
+		// // 	console.log('number is ' + i);
+		// // 	if (i ===3 ) {
+		// // 		console.log( '3 is even no');
+		// // 		continue;
+		// // 	}
+		// // 	if (i === 5) {
+		// // 		console.log('5 is holiday');
+		// // 		break;
+		// // 	}
+		// // 	console.log('number is add ' + i++);
+		// // }
+
+		// //while loop 
+		// let a = 1 ;
+		// // while( a < 10 ) {
+		// // 	console.log( ' number is a ' + a);
+		// // 	a++;
+		// // }
+		// // do while 
+		// do {
+		// 	a = 1 ;
+		// 	console.log('no is' + a);
+		// 	a++;
+		// }
+		// while(a < 10);
+		// //
+		// const car = ['hundai','amberter','honda', 'suzuki ', 'ndf'];
+		// for (let i =0; i < car.length; i++) {
+		// 	console.log(car[i]);
+		// }
+		// //
+		// // car.forEach(function(car) {
+		// // 	console.log(car);
+		// // });
+		// //maping 
+		// const user =[ 
+		// { id: 1,name : 'zahid',add:'delhi'},
+		// { id :2, name:'sahid', add:'aurangabad'},
+		// {id: 3,name:'nahid',add:'rajsthan'},
+		// { id : 4, name:'sahid', add:'patna'}
+		// ];
+		// const ids = user.map(function(obj) {
+		// 	return user.id;
+		// });
+		// console.log(ids);
+		// console.log(ids);
+		// // car.forEach(function(car,index,array) {
+		// // 	console.log(` car ${index}:${car}`);
+		// // 	console.log(array);
+		// // });
+		// const color = {
+		// 	1:'red',
+		// 	2:'black',
+		// 	3:'blue'}
+
+		// 	for (let x  in color ) {
+		// 		console.log(`${x}:${color[x]}`);
+		// 	}
+	</script>
+</body>
+</html>

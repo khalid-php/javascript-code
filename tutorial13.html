@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function</title>
+</head>
+<body>
+	<script>
+		const a = 50;
+		const b =60;
+		function add() {
+			let c = a + b ;
+			console.log("add the " + c);
+		} 
+		add();
+		function sub(c, d) {
+			return c - d;
+		}
+	console.log(sub(10,45));
+
+	function  squrt(x) {
+		return  x * x ;
+	}
+	console.log(squrt(8));
+
+	const sque1 = function (x = 4 ) {
+		return x * x;
+	}
+	console.log(sque1());
+
+	(function () {
+		console.log('i am useing the ');
+	}) ();
+	(function (name){
+		console.log('name is ' + name);
+	}) ('ram');
+
+	const book = {
+		add: function () {
+			console.log('add the list');
+		}
+		// edit:function( x) {
+		// 	console.log(`edit the list ${x}`);
+		// }
+	}
+	book.add();
+	// book.edit(10);
+	book.delete = function () {
+		console.log('delete the no');
+	}
+	book.delete();
+
+	</script>
+</body>
+</html>
